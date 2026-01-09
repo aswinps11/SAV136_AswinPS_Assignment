@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+#mainContent {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#navCanvas {
+    border: 1px solid black;
+    background: #e0f7fa;
+    cursor: grab;
+}
+
+#infoPanel {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: #fafafa;
+}
+
+#infoPanel h3 {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Instruction-style help section */
+.helpList {
+    padding-left: 18px;
+    font-size: 13.5px;
+    color: #2c3e50;
+    background: #eef6fb;
+    border-left: 4px solid #3498db;
+    padding: 10px 15px;
+    border-radius: 4px;
+    list-style-type: "➤ ";
+}
+
+.helpList li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+/* Slight instruction heading style */
+#infoPanel h3 {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #1f4e79;
+}
+

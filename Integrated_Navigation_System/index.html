@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation & Route Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Navigation & Route Monitoring System</h1>
+
+<div id="controls">
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+
+    <label>Speed:</label>
+    <input type="range" id="speedRange" min="20" max="200" value="60">
+    <span id="speedValue">60</span>
+
+    <button id="northUpBtn">North-Up</button>
+    <button id="headingUpBtn">Heading-Up</button>
+</div>
+
+<div id="mainContent">
+    <canvas id="navCanvas" width="800" height="600"></canvas>
+
+    <div id="infoPanel">
+        <h2>Vessel Info</h2>
+
+        <p><strong>Position:</strong> <span id="pos"></span></p>
+        <p><strong>Speed:</strong> <span id="speedInfo"></span></p>
+        <p><strong>Heading:</strong> <span id="headingInfo"></span></p>
+        <p><strong>Distance to Next WP:</strong> <span id="distanceInfo"></span></p>
+        <p><strong>ETA:</strong> <span id="etaInfo"></span></p>
+
+        <hr>
+
+        <h3>Controls Help</h3>
+        <ul class="helpList">
+            <li><strong>Start:</strong> Begin vessel movement</li>
+            <li><strong>Pause:</strong> Stop movement</li>
+            <li><strong>Add Waypoint:</strong> Left click on map</li>
+            <li><strong>Move Waypoint:</strong> Drag waypoint</li>
+            <li><strong>Remove Waypoint:</strong> Right click on waypoint</li>
+            <li><strong>Zoom:</strong> Mouse scroll</li>
+            <li><strong>Pan:</strong> Click & drag empty area</li>
+            <li><strong>North-Up:</strong> Fixed north orientation</li>
+            <li><strong>Heading-Up:</strong> Vessel heading on top</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
